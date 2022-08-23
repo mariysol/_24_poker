@@ -34,7 +34,7 @@ class _ChairSelectState extends State<ChairSelect> {
                         : const BorderRadius.all(Radius.circular(90))),
               onTap: (() {
                 setState(() {
-                  chair[index] = !chair[index];
+                  if(index != 9) chair[index] = !chair[index];
                 });
               }),
               child: Card(
